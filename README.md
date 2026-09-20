@@ -9,7 +9,7 @@ I try to make these reports look as realistic as possible, so I can build report
 .
 ├── templates/
 │   ├── incident-report.md
-│   ├── pentest-finding.md
+│   ├── pentest-findings.md
 │   └── ctf-report.md
 ├── incident-reports/
 │   └── YYYY-MM-DD-room-or-scenario-name.md

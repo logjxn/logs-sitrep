@@ -57,6 +57,7 @@ Alert 4 - The user C. Allen received an "urgent" email at 09/20/2026 16:40:27.09
 account, and that they need to review account activity immediately. The sender, no-reply@m1crosoftsupport[.]co, is not a legitimate Microsoft email (notice the 1 instead
 of an I). Combined with the urgency and typo-squatting, these traits are consistent with phishing attempts. The email contained a link to hxxps://m1crosoftsupport[.]co/login, to which the user
 accessed, and the internal firewall did not block this request. This alert deserves escalation to L2 to further investigate whether the credentials were compromised, and reviewing any further authentication on the user account.
+
 ## Recommendations 
 
 Alert 1 - False Positive - Closed

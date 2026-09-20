@@ -1,8 +1,6 @@
 # logs-sitrep
 Structured reports from TryHackMe paths, CTF challenges, and bug bounty research.
 
-I try to make these reports look as realistic as possible, so I can build report skills while I work on my technical abilities.
-
 ## Structure
 
 ```

@@ -44,7 +44,7 @@ Alert 4
 ## Affected Systems
 
 H. Harris - 10.20.2[.]17:34257 - h.harris@trydaily[.]thm
-C. Allen - c.allen@thetrydaily[.]thm 
+C. Allen - IP not observed - c.allen@thetrydaily[.]thm 
 
 ## Analysis
 Alerts 2 & 3 - Chained together due to alert three being a direct result of alert two's outcome. The user H. Harris received a phishing email from urgents@amazon[.]biz,

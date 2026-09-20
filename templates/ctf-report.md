@@ -13,21 +13,16 @@
 
 ## Objective
 
-> **Guidance:** One or two sentences. What were you asked to find or accomplish?
 
 ## Reconnaissance
 
-> **Guidance:** What did you learn about the target before exploiting anything? Nmap output, directory enumeration, source inspection, etc.
 
 ## Methodology
 
-> **Guidance:** Walk through your approach step by step. Explain your reasoning, not just  commands. Structure it by phase: What did you try first and why? What worked, what didn't? Where did you pivot and what prompted it? Include tool commands and output inline.
 
 ## Key Findings
 
-> **Guidance:** Bullet the critical discoveries that led to the solve. Specifics: the vuln, the misconfiguration, the credential, the logic flaw.
 
-- 
 
 ## Lessons Learned
 

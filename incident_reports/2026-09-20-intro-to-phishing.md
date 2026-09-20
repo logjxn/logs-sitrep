@@ -74,35 +74,35 @@ Alert 4 - True Positive - The phishing attempt reached the user, and the malicio
 Source: SIEM alert view; internal confirmation via email thread (H. Harris, HR)
 
 Alert (as-seen):
-  Time:      09/20/2026 16:34:56.095
-  Sender:    onboarding@hrconnex[.]thm
-  Recipient: j.garcia@thetrydaily[.]thm
-  URL:       hxxps://hrconnex[.]thm/onboarding/15400654060/j.garcia
+Time:      09/20/2026 16:34:56.095
+Sender:    onboarding@hrconnex[.]thm
+Recipient: j.garcia@thetrydaily[.]thm
+URL:       hxxps://hrconnex[.]thm/onboarding/15400654060/j.garcia
 
 FP confirmation:
-  09/20/26 15:36:29.095 - H. Harris (HR) confirmed hrconnex[.]thm is the
-  org's third-party onboarding provider and that J. Garcia is a pending new
-  hire awaiting onboarding.
+09/20/26 15:36:29.095 - H. Harris (HR) confirmed hrconnex[.]thm is the
+org's third-party onboarding provider and that J. Garcia is a pending new
+hire awaiting onboarding.
 
 ### E2: Alert 2 - Amazon-themed phishing email to H. Harris
 
 Source: SIEM alert view
 
-  Time:      09/20/2026 16:38:09.095
-  Sender:    urgents@amazon[.]biz
-  Recipient: h.harris@trydaily[.]thm
-  URL:       hxxp://bit[.]ly/3sHkX3da12340
-  Phish:      Fake failed-delivery notice; prompts user to re-enter shipping info
+Time:      09/20/2026 16:38:09.095
+Sender:    urgents@amazon[.]biz
+Recipient: h.harris@trydaily[.]thm
+URL:       hxxp://bit[.]ly/3sHkX3da12340
+Phish:      Fake failed-delivery notice; prompts user to re-enter shipping info
 
 ### E3: Alert 3 - Firewall log, blocked access to blacklisted URL
 
 Source: SIEM firewall log 
 
-  Time:      09/20/2026 16:39:23.095
-  Source IP: 10.20.2[.]17:34257  (H. Harris)
-  Dest IP:   67.199.248[.]11:80
-  URL:       hxxp://bit[.]ly/3sHkX3da12340
-  Action:    Blocked (blacklist match)
+Time:      09/20/2026 16:39:23.095
+Source IP: 10.20.2[.]17:34257  (H. Harris)
+Dest IP:   67.199.248[.]11:80
+URL:       hxxp://bit[.]ly/3sHkX3da12340
+Action:    Blocked (blacklist match)
 
 Note: Same event as E2 (Harris/Amazon), second event. No further access attempts to this URL in logs after.
 
@@ -110,9 +110,9 @@ Note: Same event as E2 (Harris/Amazon), second event. No further access attempts
 
 Source: SIEM alert view; URL-access confirmed via SIEM logs
 
-  Time (email):  09/20/2026 16:40:27.095
-  Sender:        no-reply@m1crosoftsupport[.]co
-  Recipient:     c.allen@thetrydaily[.]thm
-  URL:           hxxps://m1crosoftsupport[.]co/login
-  Phish:          Fake "suspicious sign-in" alert; prompts credential review
-  Outcome:       User accessed URL at 09/20/2026 16:41:36.095; firewall ALLOWED
+Time (email):  09/20/2026 16:40:27.095
+Sender:        no-reply@m1crosoftsupport[.]co
+Recipient:     c.allen@thetrydaily[.]thm
+URL:           hxxps://m1crosoftsupport[.]co/login
+Phish:          Fake "suspicious sign-in" alert; prompts credential review
+Outcome:       User accessed URL at 09/20/2026 16:41:36.095; firewall ALLOWED

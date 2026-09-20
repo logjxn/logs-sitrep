@@ -24,8 +24,8 @@ I try to make these reports look as realistic as possible, so I can build report
 
 | Type | Source | Format |
 |------|--------|--------|
-| Incident Report | TryHackMe SOC L1, blue team scenarios | Timeline-driven, IOC-focused |
-| Pentest Finding | TryHackMe Jr Pentester, offensive labs | CVSS-scored, reproduction-focused |
+| Incident Report | TryHackMe SOC rooms, blue team scenarios | Timeline-based, IOC-focused |
+| Pentest Finding | TryHackMe pen-test rooms, offensive labs | CVSS-scored, reproduction-focused |
 | CTF Report | Standalone challenges, competitions | Methodology narrative |
 
 ## Paths in Progress

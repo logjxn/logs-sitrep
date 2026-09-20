@@ -47,16 +47,13 @@ H. Harris - 10.20.2[.]17:34257 - h.harris@trydaily[.]thm
 C. Allen - IP not observed - c.allen@thetrydaily[.]thm 
 
 ## Analysis
-Alerts 2 & 3 - Chained together due to alert three being a direct result of alert two's outcome. The user H. Harris received a phishing email from urgents@amazon[.]biz,
+Alerts 2 & 3 - Chained together, as alert three is a direct result of alert two's outcome. The user H. Harris received a phishing email from urgents@amazon[.]biz,
 posing as Amazon informing the user that their package was not delivered, and that they needed to access an external URL to re-enter shipping information. The URL
-(hxxp://bit[.]ly/3sHkX3da12340) is a known bad website, blacklisted internally by the organization. At 09/20/2026 16:39:23.095, the user attempted to access the
-website, indicating interaction with the phishing attempt, but was denied by the organization's firewall. No further logs indicate that the user continued to try and access
-this website after being initially denied.
+(hxxp://bit[.]ly/3sHkX3da12340) is a known-bad website, blacklisted internally by the organization. At 09/20/2026 16:39:23.095, the user attempted to access the
+website, indicating interaction with the phishing attempt, but was denied by the organization's firewall. No further logs indicate that the user continued to try and access this website after being initially denied.
 
 Alert 4 - The user C. Allen received an "urgent" email at 09/20/2026 16:40:27.095, encouraging them that there was a malicious attempt to access their Microsoft 
-account, and that they need to review account activity immediately. The sender, no-reply@m1crosoftsupport[.]co, is not a legitimate Microsoft email (notice the 1 instead
-of an I). Combined with the urgency and typo-squatting, these traits are consistent with phishing attempts. The email contained a link to hxxps://m1crosoftsupport[.]co/login, to which the user
-accessed, and the internal firewall did not block this request. This alert deserves escalation to L2 to further investigate whether the credentials were compromised, and reviewing any further authentication on the user account.
+account, and that they need to review account activity immediately. The sender, no-reply@m1crosoftsupport[.]co, is not a legitimate Microsoft email (notice the 1 instead of an I). Combined with the urgency and typo-squatting, these traits are consistent with phishing attempts. The email contained a link to hxxps://m1crosoftsupport[.]co/login, to which the user accessed, and the internal firewall did not block this request. This alert deserves escalation to L2 to further investigate whether the credentials were compromised, and reviewing any further authentication on the user account.
 
 ## Recommendations 
 
@@ -66,10 +63,7 @@ Alerts 2 & 3 - True Positives - Firewall blocked access to the malicious URL, en
 filtering rules should be tightened to detect illegitimate domains, such as amazon[.]biz, and auto-filter to spam so the user is not persuaded to urgently enter their information.
 Furthermore, users should be trained to recognize phishing attempts and signs.
 
-Alert 4 - True Positive - The phishing attempt reached the user, and the malicious URL was accessed without intervention. First priority should be to contact the user and determine whether credentials 
-or other sensitive information were entered into the site. As a precaution, credentials should be reset if credential submission cannot be ruled out. L2 should also review authentication logs for suspicious sign-ins,
-token activity, MFA changes, and other indicators of account compromise. Furthermore, the domain should be added to a blacklist in an attempt to prevent future access. Email filters should be tuned to identify suspicious typosquatting domains and 
-impersonation attempts, and users should be trained to recognize false domains more efficiently.
+Alert 4 - True Positive - The phishing attempt reached the user, and the malicious URL was accessed without intervention. First priority should be to contact the user and determine whether credentials or other sensitive information were entered into the site. As a precaution, credentials should be reset if credential submission cannot be ruled out. L2 should also review authentication logs for suspicious sign-ins, token activity, MFA changes, and other indicators of account compromise. Furthermore, the domain should be added to a blacklist in an attempt to prevent future access. Email filters should be tuned to identify suspicious typo=squatting domains and impersonation attempts, and users should be trained to recognize false domains more efficiently.
 
 
 ## Evidence Appendix

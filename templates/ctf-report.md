@@ -23,8 +23,7 @@
 ## Key Findings
 
 
-
 ## Lessons Learned
 
-> **Guidance:** What did this challenge teach you? New techniques or tools you picked up, mistakes or rabbit holes and what you'd do differently, concepts you need to study further. 
+
 -

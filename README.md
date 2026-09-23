@@ -7,13 +7,12 @@ Structured reports from TryHackMe paths, CTF challenges, and bug bounty research
 .
 ├── templates/
 │   ├── incident-report.md
-│   ├── pentest-findings.md
-│   ├── detection-engineering.md 
+│   ├── pentest-finding.md
 │   └── ctf-report.md
 
-├── blue-team/
+├── incident-reports/
 │   └── YYYY-MM-DD-room-or-scenario-name.md
-├── red-team/
+├── pentest-findings/
 │   └── YYYY-MM-DD-room-or-scenario-name.md
 ├── ctf-reports/
 │   └── YYYY-MM-DD-challenge-name.md

@@ -8,10 +8,12 @@ Structured reports from TryHackMe paths, CTF challenges, and bug bounty research
 ├── templates/
 │   ├── incident-report.md
 │   ├── pentest-findings.md
+│   ├── detection-engineering.md 
 │   └── ctf-report.md
-├── incident-reports/
+
+├── blue-team/
 │   └── YYYY-MM-DD-room-or-scenario-name.md
-├── pentest-findings/
+├── red-team/
 │   └── YYYY-MM-DD-room-or-scenario-name.md
 ├── ctf-reports/
 │   └── YYYY-MM-DD-challenge-name.md
@@ -22,8 +24,8 @@ Structured reports from TryHackMe paths, CTF challenges, and bug bounty research
 
 | Type | Source | Format |
 |------|--------|--------|
-| Incident Report | TryHackMe SOC rooms, blue team scenarios | Timeline-based, IOC-focused |
-| Pentest Finding | TryHackMe pen-test rooms, offensive labs | CVSS-scored, reproduction-focused |
+| Blue-Team | SOC rooms, detection/defensive scenarios | Incident reports (timeline/IOC), detection-engineering |
+| Red-Team | TryHackMe pen-test rooms, offensive labs | CVSS-scored, reproduction-focused |
 | CTF Report | Standalone challenges, competitions | Methodology narrative |
 
 ## Paths in Progress

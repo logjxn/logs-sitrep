@@ -22,8 +22,6 @@
 
 ## Indicators of Compromise
 
-> **Guidance:** Only include what you actually found. Remove unused rows.
-
 | Type | Value | Context |
 |------|-------|---------|
 | IP Address | | |

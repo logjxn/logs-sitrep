@@ -1,24 +1,6 @@
 # logs-sitrep
 Structured reports from TryHackMe paths, CTF challenges, and bug bounty research.
 
-## Structure
-
-```
-.
-├── templates/
-│   ├── incident-report.md
-│   ├── pentest-finding.md
-│   └── ctf-report.md
-
-├── incident-reports/
-│   └── YYYY-MM-DD-room-or-scenario-name.md
-├── pentest-findings/
-│   └── YYYY-MM-DD-room-or-scenario-name.md
-├── ctf-reports/
-│   └── YYYY-MM-DD-challenge-name.md
-└── README.md
-```
-
 ## Report Types
 
 | Type | Source | Format |

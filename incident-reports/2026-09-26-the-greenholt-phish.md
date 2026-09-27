@@ -112,7 +112,7 @@ The consistent Loki namings point to a credential stealer. However, no sandbox o
 
 Source: `challenge.eml`, viewed as source in Thunderbird.
 
-![Email Headers](../assets/Greenholt-Phish-P1.png)
+![Email Headers](../assets/The-Greenholt-Phish/Greenholt-Phish-P1.png)
 
 ### E2: SPF and DMARC Records for mutawamarine.com
 
@@ -134,10 +134,10 @@ $ sha256sum SWT_#09674321____PDF__.CAB
 
 Source: VirusTotal, lookup 2026-09-26
 
-![VirusTotal](../assets/Greenholt-Phish-P2.png)
+![VirusTotal](../assets/The-Greenholt-Phish/Greenholt-Phish-P2.png)
 
 ### E5: Cisco Talos IP Lookup
 
 Source: Cisco Talos Intelligence, lookup 2026-09-26
 
-![Talos](../assets/Greenholt-Phish-P3.png)
+![Talos](../assets/The-Greenholt-Phish/Greenholt-Phish-P3.png)

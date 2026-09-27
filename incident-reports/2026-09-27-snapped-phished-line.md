@@ -68,7 +68,7 @@ Email authentication (SPF) results varied across relay hops, with some passing a
 
 ### Redirect Attachment
 
-`Direct Credit Advice.html` contains no script. It is a redirect that immediately sends the browser to the attacker's login page, with a fallback link if the refresh fails. The recipient's email address is hardcoded into the redirect URL as a query parameter, which pre-fills the address on the fake login page so it looks like a re-authentication prompt.
+`Direct Credit Advice.html` contains no script. It is a redirect that sends the browser to the attacker's login page, with a fallback link if it fails. The recipient's email address is hardcoded into the redirect URL as a query parameter, which pre-fills the address on the fake login page so it looks more like a re-authentication prompt.
 
 This suggests the attachments were personalized per recipient. This could also mean that a single file hash would not match all four attachments, due to them being personalized across users.
 
@@ -80,9 +80,9 @@ The redirect lands on a counterfeit Microsoft 365 "Enter password" page served o
 
 Browsing the `/data` directory showed the attacker's kit archive, `Update365.zip`, available for download. VirusTotal flagged it on 33 of 66 engines, with threat categories trojan, phishing, and hacktool, and family labels `phishmailer`, `phishingms`, and `akgpp`. The archive holds 49 files: PHP handlers, the login page assets, and a `Validation/submit.php` credential handler.
 
-`submit.php` sends captured credentials to `m3npat@yandex[.]com` using PHP's `mail()` function, then redirects the victim to a retry page.
+`submit.php` sends captured credentials to `m3npat@yandex[.]com` using PHP's `mail()` function.
 
-The forged page hangs upon submission until it eventually returns an HTTP 504 Gateway Timeout response (tested manually). The kit also redirects the victim to retry.php after credential capture. These behaviors may have contributed to M. Ascot submitting credentials twice.
+The forged page hangs upon submission until it eventually returns an HTTP 504 Gateway Timeout response (tested manually). The kit also redirects the victim to retry.php after capture. These behaviors may have contributed to M. Ascot submitting their credentials twice.
 
 ### Exposed Credential Log
 
@@ -104,18 +104,18 @@ In the logs, there is also a non-Swiftspend address. The explanation for this is
 ## Containment & Recovery
 
 1. Reset passwords for M. Ascot, Z. Duncan, D. Marshall, and M. Chen, and revoke active sessions and refresh tokens so existing sign-ins are invalidated.
-2. Review Microsoft 365 sign-in logs for all four accounts from 2020-06-29 onward for sign-ins from unfamiliar IPs or countries, MFA method changes, and new app consents.
-3. Check all four mailboxes for newly created inbox rules, especially external forwarding or rules that hide or delete messages.
-4. Block `kennaroads[.]buzz` and `groupmarketingonline[.]icu` at DNS and web proxy, and block the sender address and domain at the mail gateway.
+2. Review Microsoft 365 sign-in logs on all four accounts for sign-ins from unfamiliar IPs or countries, MFA method changes, and new app consents.
+3. Check all four mailboxes for suspicious inbox rules.
+4. Block `kennaroads[.]buzz` and `groupmarketingonline[.]icu` at DNS + any proxies, and block the sender address and domain at the mail gateway.
 5. Search mail logs for any other recipients of mail from `groupmarketingonline[.]icu` and remove the messages from all mailboxes.
 
 ## Recommendations
 
 **Controls**
 
-- Quarantine or strip `.html` and `.htm` attachments from external senders at the mail gateway. 
+- Quarantine or strip `.html` and `.htm` attachments from external senders at the gateway. 
 - Enforce phishing-resistant MFA (FIDO2 or passkeys) for Microsoft 365. A captured password alone would then not grant access.
-- Run targeted awareness training for finance staff on payment-themed lures, noting that the external-sender banner was present on these emails and did not stop them.
+- Run targeted awareness training for finance staff on payment-themed attempts, as the external-sender banner was present on these emails but did not stop them.
 
 **Reporting**
 

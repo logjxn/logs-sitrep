@@ -131,7 +131,7 @@ The attacker made at least two escape attempts through the webshell:
 
 ## Evidence Appendix
 
-### E1: Attacker REST API enumeration (filtered by source IP, sorted by Info)
+### E1: Attacker enumeration (filtered by source IP, sorted by Info)
 ![Enumeration](../assets/JetBrains-CybDef/JetBrains-P1.png)
 
 ### E2: Auth-bypass requests (`/hax?jsp=...;.jsp`)
@@ -140,7 +140,7 @@ The attacker made at least two escape attempts through the webshell:
 ### E3: NVD entry for CVE-2024-27198
 ![CVE](../assets/JetBrains-CybDef/JetBrains-P3.png)
 
-### E4: Webshell upload, NSt8bHTg.zip (tcp.stream 364)
+### E4: Webshell upload, NSt8bHTg.zip 
 ![Webshell](../assets/JetBrains-CybDef/JetBrains-P4.png)
 
 ### E5: Creds.txt tampering (packet 31123)
@@ -149,5 +149,5 @@ The attacker made at least two escape attempts through the webshell:
 ### E6: Container escape attempt, host filesystem mount
 ![Docker](../assets/JetBrains-CybDef/JetBrains-P6.png)
 
-### E7: `whoami` returning root, with the timestamp anchor
+### E7: `whoami` returning root
 ![whoami](../assets/JetBrains-CybDef/JetBrains-P7.png)

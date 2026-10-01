@@ -19,8 +19,8 @@ All scenarios are training environments (TryHackMe, CyberDefenders).
 ## Report Formats
 
 - **Incident report**: blue-team investigations ([template](templates/incident-report.md))
-- **Pentest finding**: CVSS-scored, reproduction-focused ([template](templates/pentest-finding.md))
-- **CTF report**: methodology narrative ([template](templates/ctf-report.md))
+- **Vulnerability report**: CVSS-scored, reproduction-focused ([template](templates/vulnerability-report.md)) - planned
+- **CTF report**: methodology narrative ([template](templates/ctf-report.md)) - planned
 
 ## In Progress
 
